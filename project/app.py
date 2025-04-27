@@ -5,12 +5,12 @@ import re
 from urllib.parse import urlparse
 import pickle
 
-# Load trained model and scaler
 with open('rf_model.pkl', 'rb') as f:
     rf = pickle.load(f)
 
 with open('scaler.pkl', 'rb') as f:
     scaler = pickle.load(f)
+
 
 # Load your original training data to get feature averages
 df = pd.read_csv("C:\\Users\\shahn\\OneDrive\\Documents\\SEM 4\\Capstone\\dataset_B.csv")
