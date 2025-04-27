@@ -107,11 +107,9 @@ if st.button("🚀 Analyze URL"):
             pred_confidence = round(max(prediction_prob[0])*100, 2)
 
             if prediction[0] == 1:
-                verdict = "Phishing Website"
-                color = "red"
+                verdict = "Phishing ⚠️"
             else:
-                verdict = "Legitimate Website"
-                color = "green"
+                verdict = "Legit ✅"
 
             st.markdown("---")
 
