@@ -130,4 +130,3 @@ if st.button("🚀 Analyze URL"):
     else:
         st.warning("⚠️ Please enter a URL.")
 
-st.caption("Built with ❤️ using Streamlit and Machine Learning")
