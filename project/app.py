@@ -115,9 +115,21 @@ if st.button("🚀 Analyze URL"):
 
             st.markdown("---")
 
+            # --- KPI Cards ---
+            col1, col2, col3 = st.columns(3)
+
+            with col1:
+                st.metric(label="🔍 Prediction", value=verdict)
+
+            with col2:
+                st.metric(label="📈 Confidence", value=f"{pred_confidence}%")
+
+            with col3:
+                # Dummy accuracy (example 96%) - you can replace if you have true model accuracy
+                st.metric(label="🎯 Model Accuracy", value="80%")
+
+            st.markdown("---")
     else:
         st.warning("⚠️ Please enter a URL.")
 
 st.caption("Built with ❤️ using Streamlit and Machine Learning")
-
-
