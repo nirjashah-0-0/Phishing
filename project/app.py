@@ -7,7 +7,7 @@ from sklearn.preprocessing import LabelEncoder, StandardScaler
 from sklearn.ensemble import RandomForestClassifier
 
 # Load dataset
-df = pd.read_csv("dataset_B.csv")  # Notice: no full path, just filename!
+df = pd.read_csv("./project/dataset_B.csv")  # Notice: no full path, just filename!
 
 # Preprocessing
 df_model = df.drop(columns=["url"])
